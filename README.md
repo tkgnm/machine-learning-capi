@@ -1,10 +1,10 @@
 # Machine learning with CAPI.
 
- If you're experienced with python .ipynb files:
+ ## If you're experienced with python .ipynb files:
 
  Simply download the repo and run the mlartices.ipynb file in your jupyter notebook editor of choice. Install the requirements file if necessary - you will need sklearn and numpy.
  
-  If you are less experienced with python .ipynb files:
+ ## If you are less experienced with python .ipynb files:
   
   https://www.geeksforgeeks.org/how-to-install-jupyter-notebook-on-macos/
   
