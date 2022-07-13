@@ -2,7 +2,7 @@
 
  ## If you're experienced with python .ipynb files:
 
- Simply download the repo and run the mlartices.ipynb file in your jupyter notebook editor of choice. Install the requirements file if necessary - you will need sklearn and numpy.
+ Simply download the repo and open the run_me.ipynb file in your jupyter notebook editor of choice to get started. Install the requirements.txt file if necessary - you will need sklearn and numpy.
  
  ## If you are less experienced with python .ipynb files:
   
