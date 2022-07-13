@@ -1,2 +1,2 @@
 
-https://content.guardianapis.com/search?page-size=200&show-fields=trailText,headline,body,byline&api-key=f2652ec5-7f11-4682-bb81-16c0a5e6c850\
+https://content.guardianapis.com/search?page-size=200&show-fields=trailText,headline,body,byline&api-key=YOUR_DEVELOPER_KEY_HERE\
