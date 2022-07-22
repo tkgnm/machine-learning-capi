@@ -12,6 +12,8 @@
  
   You will need Python installed on your machine and some additional dependencies. You will also need an editor that can read `.ipynb` files. The simplest way to get started would be to install an <a href="https://www.anaconda.com/products/distribution">Anaconda distribution of Python</a>. This will install Python and Jupyter Notebook which you can use to run the `.ipynb` file. It should also install all necessary dependencies so you can get going straight away.
   
+## Virtual environment instructions
+  
    As with any data science project it is recommended that you set up a virtual environment to isolate this projects dependencies and prevent conflicts. I have only included instructions to set up a virtual environment on a mac but there will be plenty of resources online that explain the same for other operating systems.  
    
    ####  To setup a virtual environment: 
