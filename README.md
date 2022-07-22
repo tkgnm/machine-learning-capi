@@ -24,15 +24,16 @@ First, choose a sensible environment name. I'm going to use `ml_capi` but you ca
 This should have activated your virtual environment. You'll be able to tell because `ml_capi` should be in parantheses at the beginning of your command line e.g `(ml_capi)`. Next, you need to install the ipykernel so that you can use your virtual environment in your jupyter notebook.  
 
     
-    4. pip install --upgrade jupyter ipykernel
-    5. python -m ipykernel install --user --name=ml_capi
+    4. conda install pip
+    5. pip install --upgrade jupyter ipykernel
+    6. python -m ipykernel install --user --name=ml_capi
    
  With this step complete, you should now be able to select the appropriate kernel in Jupyter Notebook. Open Jupyter Notebook, navigate to this repo and open the `run_me.ipynb` file. Next, from the toolbar at the top choose kernel > change kernel > ml_capi. 
    
-   Next, you need to install the `requirements.txt` file. In terminal, navigate to the directory of this repo:
- 
-   6. pip install -r requirements.txt
-   
-   And you're good to go! You should now be able to run this notebook in its own dedicated virtual environment with all necessary dependencies. 
+Next, you need to install the `requirements.txt` file. In terminal, navigate to the directory of this repo:
+
+    7. pip install -r requirements.txt
+  
+ And you're good to go! You should now be able to run this notebook in its own dedicated virtual environment with all necessary dependencies. 
    
     
