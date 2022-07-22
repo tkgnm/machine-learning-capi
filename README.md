@@ -14,7 +14,7 @@
   
 ## Virtual environment instructions
   
-   As with any data science project it is recommended that you set up a virtual environment to isolate this projects dependencies and prevent conflicts. I have only included instructions to set up a virtual environment on a mac but there will be plenty of resources online that explain the same for other operating systems.  
+   As is the case for any data science project it is recommended that you set up a virtual environment to isolate this projects dependencies and prevent conflicts. I have only included instructions to set up a virtual environment on a mac but there will be plenty of resources online that explain the same for other operating systems.  
    
    ####  To setup a virtual environment: 
    
