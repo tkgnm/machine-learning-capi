@@ -4,9 +4,9 @@ files = ["articles_1.json", "articles_2.json", "articles_3.json", "articles_4.js
 
 results = []
 
-print("Saving...")
-
 for file in files:
+    
+    print(f'Opening {file}')
         
     # Opening JSON file
     f = open("articledata/" + file)
@@ -20,14 +20,16 @@ for file in files:
     
     data = data["response"]["results"]
     
+    print("Appending items to array")
     for item in data:
         results.append(item)
     
     f.close()
     
-    
+print ("Creating dictionary")
 myDict = {"all_articles": results}
 
+print("Writing to disk")
 with open('data/rawdata.json', 'w') as data:
     json.dump(myDict, data)
 
