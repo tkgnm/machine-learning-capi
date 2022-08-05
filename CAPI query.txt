@@ -1,2 +1,1 @@
-
 https://content.guardianapis.com/search?page-size=200&show-fields=trailText,headline,body,byline&api-key=YOUR_DEVELOPER_KEY_HERE\
