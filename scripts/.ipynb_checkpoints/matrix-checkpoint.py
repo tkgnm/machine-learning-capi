@@ -18,6 +18,7 @@ trailText = []
 body = []
 ids = []
 
+print("Appending items to array")
 for article in data:
 
     headline.append(article["fields"]["headline"])
@@ -25,7 +26,8 @@ for article in data:
     body.append(article["fields"]["body"])
     ids.append(article["id"])
     
-    
+
+print("Removing html")
 htmlRemover = re.compile('<.*?>') 
 newlineRemover = '\n'
 
@@ -43,15 +45,29 @@ for i in range(len(body)):
     cleanTrailText.append(cleanhtml(trailText[i]))
     cleanBody.append(cleanhtml(body[i]))
     
-    
+
+print("Performing vectorization")
+
 vect = TfidfVectorizer(min_df=1, stop_words="english")
 tfidf = vect.fit_transform(cleanBody)                                                                                       
 pairwise_similarity = tfidf * tfidf.T 
 
 arr = pairwise_similarity.toarray()     
 np.fill_diagonal(arr, np.nan)     
+arr = arr.astype('float16') #compress to float 16
+print("Saving data")
 
-np.save("data/sparseMatrix.npy", arr)
+###before you save, split the data and put it back together in the run.py
+
+np.split(arr, 2)
+
+file = 1
+for split in (np.split(arr, 2)):
+    print(f"Saving file {file}")
+    np.save(f"data/sparseMatrix{file}.npy", split)
+    file += 1
+
+# np.save("data/sparseMatrix.npy", arr)
 
 textfile = open("data/article_ids.txt", "w")
 for element in ids:
