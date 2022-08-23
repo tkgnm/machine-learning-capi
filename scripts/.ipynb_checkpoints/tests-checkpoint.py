@@ -1,1 +1,0 @@
-#assert that sparsematrix1 and sparsematrix2 joined is the same as sparsematrix
