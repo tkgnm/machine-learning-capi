@@ -28,6 +28,3 @@ print("RECOMMENDED ARTICLE: {}".format(ids[result_idx]))
 print("{}".format(ids[result_idx]))
 similarity_score = round(arr[input_idx,result_idx], 3)
 print("Similarity score: {}".format(similarity_score))
-print("___________")
-
-
